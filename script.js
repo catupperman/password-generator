@@ -16,7 +16,7 @@ function writePassword() {
 }
 function askForOptions() {
   //parseInt: analyzing a string with mathmatical properties; returning an integer
-  var passLength = parseInt(prompt("How many characters wouold you like in  your password?"));
+  var passLength = parseInt(prompt("How many characters would you like in  your password?"));
   console.log(passLength);
   //keeping the number greater than 8
   if (passLength < 8) {
@@ -34,10 +34,10 @@ function askForOptions() {
     return;
   }
   //variables to apply to the arrays in question
-  var isLower = confirm("Would you like lowercase letters?");
-  var isUpper = confirm("Would you like uppercase letters?");
-  var isNumber = confirm("Would you like numbers?");
-  var isSpecial = confirm("Would you like Special Characters?");
+  var isLower = confirm("Would you like lowercase letters in your password?");
+  var isUpper = confirm("Would you like UPPERCASE letters in your password?");
+  var isNumber = confirm("Would you like Numbers in your password?");
+  var isSpecial = confirm("Would you like Special Characters in your password?");
   //to avoid user from not chosing an option
   if (isLower === false && isUpper === false && isNumber === false && isSpecial === false) {
     alert("Must Choose one character type");
